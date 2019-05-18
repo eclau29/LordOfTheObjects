@@ -14,7 +14,7 @@ You are a space monster on a path to total control of the universe.  However, yo
   * GitHub
 
 ### Lessons Learned
-  + I learned `private` information is only visible to the Class itself; it cannot be shared even through inheritance to sub-       classes.
+  + `private` information is only visible to the Class itself; it cannot be shared even through inheritance to sub-                classes.
   + Inheritance is useful because it prevents repeated code.
-  + Learned how to access private data through methods.
+  + How to access private data through methods.
   + Encapsulation prevents direct access and editing of private information.
