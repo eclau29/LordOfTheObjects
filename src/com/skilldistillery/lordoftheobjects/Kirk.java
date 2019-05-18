@@ -12,7 +12,7 @@ public class Kirk extends Character {
 
 	// Methods (getters and setters are inherited for name, health, and updated
 	// health levels
-	public void KirkWins() {
+	public void kirkWins() {
 		System.out.println("Captain Kirk WINS! You have lost, poor Gertie.");
 		System.out.println("Death is the true Final Frontier. Embrace your fate.");
 		System.exit(0);

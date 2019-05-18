@@ -11,12 +11,11 @@ public class Kraken extends Character {
 		this.health = health;
 
 	}
-	
 
 	// Methods (getters and setters are inherited for name, health, and updated
 	// health levels
 
-	public void krakAttack(Scanner kb) {
+	public int krakAttack(Scanner kb) {
 		System.out.println("You're about to attack! Which move would you like to use? ");
 
 		System.out.println("  1: Tear the enemy apart with your kraken beak.");
@@ -24,34 +23,42 @@ public class Kraken extends Character {
 		System.out.println("  3: Grab the enemy with your tentacles.");
 
 		int krakAttackChoice = kb.nextInt();
-
-//		while (krakAttackChoice >= 1 && krakAttackChoice <= 3) {
+		while (krakAttackChoice < 1 || krakAttackChoice > 3) { //this catches any bad inputs from human
+			System.out.println("Gertie doesn't know that move. Try again.");
+			krakAttackChoice = kb.nextInt();
+		}
 		if (krakAttackChoice == 1) {
 			System.out.println(" * CHOMP CHOMP CHOMP * ");
 			System.out.println();
+			return krakDamage();
 		} else if (krakAttackChoice == 2) {
 			System.out.println(" * THROWS BURNING ACID * ");
 			System.out.println();
+			return krakDamage();
 		} else if (krakAttackChoice == 3) {
-			System.out.println(" * TENTACLES REACH OUT AND SQUEEZE THE ENEMY * ");
+			System.out.println(" * TENTACLES REACH OUT AND CRUSH THE ENEMY * ");
 			System.out.println();
-		}
+			return krakDamage();
+
+		} 
+		return 0;
 	}
-//	}
 
 	public int krakDamage() {
 
-		int krakRandomDmg = 1 + (int)(Math.random() * 7);
+		int krakRandomDmg = 1 + (int) (Math.random() * 7);
 		System.out.println("You dealt " + krakRandomDmg + " damage to your enemy.");
 		return krakRandomDmg;
 	}
-	
-	public void krakWinsFinal(){
+
+	public void krakWinsFinal() {
 		System.out.println("Gertie the Kraken WINS! Congratulations, you now rule the Universe!");
 		System.out.println("All your enemies now cower in shame.");
 	}
+
 	public void krakWins() {
-		System.out.println("Ha Ha you win on to the next fight! ");
+		System.out.println("ha-HA! You win! On to the next fight! ");
+		System.out.println();
 	}
-	
+
 }

@@ -25,12 +25,15 @@ public class Diana extends Character {
 		if (dianaAttackChoice == 1) {
 			System.out.println("You're tough, but are you a match for Wonder Woman's awesomeness?");
 			System.out.println("She throws a space truck at you, and you've been injured. ");
+			System.out.println();
 		} else if (dianaAttackChoice == 2) {
 			System.out.println("Wonder Woman is willing to fight for those who cannot fight for themselves.");
 			System.out.println("She hacks you with her sword, and you lose a tentacle.");
+			System.out.println();
 		} else if (dianaAttackChoice == 3) {
 			System.out.println("Wonder Woman's bracelets deflect the flying debris, and you're hit.");
 			System.out.println("You are deeply wounded.");
+			System.out.println();
 		}
 
 	}
@@ -38,7 +41,7 @@ public class Diana extends Character {
 	public int dianaDamage() {
 
 		int dianaRandomDmg = 1 + (int) (Math.random() * 4);
-		System.out.println("You lose" + dianaRandomDmg + " health points.");
+		System.out.println("You lose " + dianaRandomDmg + " health points.");
 		return dianaRandomDmg;
 	}
 }

@@ -32,7 +32,6 @@ public class Character {
 
 	public void setHealth(int damage) { //this takes in the initial and subsequent values of HP
 		this.health = this.health - damage;
-		this.health = health;
 
 	}
 	}
