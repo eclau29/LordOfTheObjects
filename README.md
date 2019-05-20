@@ -4,7 +4,7 @@
 This is a simple game that illustrates the use of abstraction, inheritance, and encapsulation. It also serves as a way to utilize everything we have learned thus far.
 
 ### How To Play
-You are a space monster on a path to total control of the universe.  However, you must fight and defeat three legendary heroes.
+As space kraken Gertrude, you are on a path to total control of the universe. You encounter three legendary heroes, choosing one of three attacks in order to defeat them. If you are defeated, you return to the depths of whence you came; if you are successful, the universe and all its power are yours.
 
 ### Technologies Used
   * Java
